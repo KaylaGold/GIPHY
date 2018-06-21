@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GIPHY!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
     
 </head>
 <body>
-        <div class='container'>
 
-            <h1>Emoji Search</h1>
+<div class="container">
 
-            <!-- Emojis will get dumped here -->
-            <div id="e-view"></div>
-        
-            <form id="e-form">
-              <label for="e-inpuet">Add an Emoji</label>
-              <input type="text" id="e-input"><br>
-        
-              <!-- Button triggers new emoji to be added -->
-              <input id="add-e" type="submit" value="Add Emoji">
-            </form>
-        
+   <h1>GIPHY! Reaction GIFs!!!</h1> 
+
+<!-- Emoji's will be displayed here!-->
+
+<div id="gif-view"></div>
 
 
+<!-- Rendered Buttons will be displayed here -->
 
-    </div>
+<div id="buttons-view"></div>
+
+
+<form id="gif-form">
+<label for="gif-input">Add a Reaction</label>
+<input type="text" id="gif-input">
+<br> 
+
+
+<!-- Button adds the GIF button to the page -->
+<input id="add-gif" type="submit" value="Add a Reaction">
+</form>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
     <script src="./assets/javascript/giphy.js"></script>
 </body>
 </html>
