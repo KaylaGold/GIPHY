@@ -1,54 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GIPHY!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+<html lang="en">
 
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Giphy API</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/giphy.css">
 </head>
+
+
 <body>
 
-<div class="container">
+    <div class="container">
+        <h1>GIPHY REACTIONS</h1>
 
-   <h1>GIPHY! Reaction GIFs!!!</h1> 
-
-<!-- Emoji's will be displayed here!-->
-
-<div id="gif-view"></div>
-
-
-<!-- Rendered Buttons will be displayed here -->
-
-<div id="buttons-view"></div>
-
-
-<form id="gif-form">
-<label for="gif-input">Add a Reaction</label>
-<input type="text" id="gif-input">
-<br> 
+        <form id="gif-form">
+            <label for="gif-input">Add YOUR REACTION to the list!</label>
+            <br/>
+            <input type="text" id="gif-input">
+            <br/>
+            <br/>
+            <input id="addGif" type="submit" class="gif-btn submitButton" value="Search">
+        </form>
 
 
-<!-- Button adds the GIF button to the page -->
-<input id="add-gif" type="submit" value="Add a Reaction">
-</form>
+        <div id="gifButtons">
+            <!-- Rendering buttons go here -->
+        </div>
 
 
+        <div id="view-gif">
+            <!-- Gifs go here -->
+        </div>
+
+    </div>
 
 
-
-
-
-
-
-</div>
-
-
-
-    <script src="./assets/javascript/giphy.js"></script>
 </body>
+<script type="text/javascript" src="./assets/javascript/giphy.js"></script>
+
 </html>
