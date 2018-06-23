@@ -30,7 +30,15 @@ h1 {
     text-shadow: 3px 2px black;
 }
 
-#addGif, button{
+#addGif{
+    background-color:yellow;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button{
     background-color: lightgreen;
     color:black;
     text-align: center;
