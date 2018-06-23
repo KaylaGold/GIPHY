@@ -12,10 +12,10 @@ function displayGifInfo() {
 
     // Now dynamically generating buttons for each GIF in the array
     let b = $('<button>');
-    // Adding a class of gif-btn to our button
-    b.addClass("gif gif-btn");
+    // Adding a class of gif-btn to our button. Adding the data attr "gifB" to give topics[i] value to the button
+    b.addClass("gifData gif-btn");
     // Adding a data-attribute
-    b.attr("data-gif", topics[i]);
+    b.attr("data-gifData", topics[i]);
     // Providing the initial button text
     b.text(topics[i]);
     // Adding the button to the gifButtons div
@@ -36,8 +36,10 @@ $("#addGif").on("click", function (event) {
   $('#gif-input').val("");
 });
 
-$(document).on("click", ".gif", function () {
-  let gifClicked = $(this).attr("data-gif")
+
+
+$(document).on("click", ".gifData", function () {
+  let gifClicked = $(this).attr("data-gifData")
   console.log(gifClicked);
 
   let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifClicked + "&api_key=8wxj1dB7Bhxy1x4Gfpap49uArL6LloD6&limit=5"

@@ -1,0 +1,40 @@
+#view-gif {
+    margin: 3%;
+    background-image: url("../images/g.jpg");
+    background: cover;
+    font-family: "interface","Helvetica Neue",helvetica,sans-serif;
+    font-style: bold;
+    font-size: 40px;
+    color:red;
+    text-align: center;
+}
+
+#body {
+    background-image: url("../images/cat.gif");
+  
+}
+
+h1 {
+    font-family: "interface","Helvetica Neue",helvetica,sans-serif;
+    font-size: 65px;
+    font-style: bold; 
+    color: white; 
+    text-shadow: 3px 2px red;
+}
+
+#gif-form{
+    font-family: "interface","Helvetica Neue",helvetica,sans-serif;
+    font-size: 18px;
+    font-style: bold; 
+    color: white; 
+    text-shadow: 3px 2px black;
+}
+
+#addGif, button{
+    background-color: lightgreen;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
