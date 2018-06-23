@@ -12,7 +12,7 @@ function displayGifInfo() {
 
     // Now dynamically generating buttons for each GIF in the array
     let b = $('<button>');
-    // Adding a class of gif-btn to our button. Adding the data attr "gifB" to give topics[i] value to the button
+    // Adding a class of gif-btn to our button. Adding the data attr "gifData" to give topics[i] value to the button
     b.addClass("gifData gif-btn");
     // Adding a data-attribute
     b.attr("data-gifData", topics[i]);
