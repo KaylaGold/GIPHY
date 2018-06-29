@@ -42,7 +42,7 @@ $(document).on("click", ".gifData", function () {
   let gifClicked = $(this).attr("data-gifData")
   console.log(gifClicked);
 
-  let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifClicked + "&api_key=8wxj1dB7Bhxy1x4Gfpap49uArL6LloD6&limit=5"
+  let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifClicked + "&api_key=8wxj1dB7Bhxy1x4Gfpap49uArL6LloD6&limit=5"
 
   // Create AJAX call for the specific reaction GIF being clicked
   $.ajax({
